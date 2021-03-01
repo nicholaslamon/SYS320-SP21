@@ -87,7 +87,7 @@ do
 		for eachIP in $(cat badIPs.txt)
 		do
 
-			echo "set policy from Trust to UnTrust ip host ${eachIP) any" | tee -a badIPs.netscreen
+			echo "set policy from Trust to UnTrust ip host ${eachIP} any" | tee -a badIPs.netscreen
 
 		done
 		exit 0
