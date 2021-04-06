@@ -36,6 +36,11 @@ function get_services() {
         
         # Stop executing the program and close the script
         break
+    
+
+    # I don't feel like writing comments for all the lines below but they are
+    # the print conditions for "running", "stopped", "all", or if the value doesn't match,
+    # returning an error and starting over.
 
     } elseif ($readServices -match "^running$") {
 
